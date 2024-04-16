@@ -1,3 +1,8 @@
+/* ================================================== */
+/* Start Variables */
+
+/* End Variables */
+
 /* Start Global Rules */
 *{
     -webkit-box-sizing: border-box;
@@ -7,8 +12,77 @@
 body{
     font-family: "Work Sans", sans-serif;
 }
-/* End Global Rules */
-/* ================================================== */
-/* Start Variables */
+.parent{
+    background-color: #eee;
+    
+}
+.container{
+    padding-left:15px ;
+    padding-right:15px ;
+    margin-left: auto;
+    margin-right: auto;
 
-/* End Variables */
+}
+/* Small Screen */
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* Medium Screen */
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+/* Large Screen */
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+
+/* Start Header Section */
+.header{
+    padding: 20px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    width: 60px;
+}
+.header .links{
+    position: relative;
+
+}
+.header .links:hover .icon span:nth-child(2){
+    width: 100%;
+}
+.header .links .icon{
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+
+}
+.header .links .icon span{
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+}
+.header .links .icon span:first-child{
+    width: 100%;
+}
+.header .links .icon span:nth-child(2){
+    width: 60%;
+    transition: .3s;
+}
+.header .links .icon span:last-child{
+    width: 100%;
+}
+/* End Header Section */

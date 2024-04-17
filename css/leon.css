@@ -14,10 +14,7 @@
 body{
     font-family: "Work Sans", sans-serif;
 }
-.parent{
-    background-color: #eee;
-    
-}
+
 .container{
     padding-left:15px ;
     padding-right:15px ;
@@ -45,26 +42,29 @@ body{
 }
 /* End Global Rules */
 
+/* ================================================= */
+
 /* Start Header Section */
 .header{
     padding: 20px;
 }
-
 .header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+/* ---- Selecting Logo ---- */
 .header .logo{
     width: 60px;
 }
+/* ---- Selecting Links which is over the burger menu ---- */
 .header .links{
     position: relative;
-
 }
 .header .links:hover .icon span:nth-child(2){
     width: 100%;
 }
+/* ---- Selecting Icon (burger menu) ---- */
 .header .links .icon{
     width: 30px;
     display: flex;
@@ -72,6 +72,7 @@ body{
     justify-content: end;
 
 }
+/* ---- Editing Icon (burger menu) ---- */
 .header .links .icon span{
     background-color: #333;
     margin-bottom: 5px;
@@ -87,7 +88,7 @@ body{
 .header .links .icon span:last-child{
     width: 100%;
 }
-
+/* ---- Selecting Ul inside the burger menu ---- */
 .header .links ul{
 list-style: none;
 margin: 0;
@@ -128,6 +129,8 @@ display: none;
 }
 /* End Header Section */
 
+/* ================================================= */
+
 /* Start Landing Section */
 .landing{
     position: relative;
@@ -156,3 +159,6 @@ max-width: 100%;
     
 }
 /* End Landing Section */
+
+/* ================================================= */
+

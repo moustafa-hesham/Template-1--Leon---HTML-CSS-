@@ -3,6 +3,8 @@
 :root{
     --main-color:#10cab7;
     --secondary-color: #2c4755;
+    --section-padding:60px;
+    --section-background:#F6f6f6
 }
 /* End Variables */
 
@@ -118,7 +120,7 @@ body{
 list-style: none;
 margin: 0;
 padding: 0;
-background-color: #F6f6f6;
+background-color: var(--section-background);
 position: absolute;
 right: 0;
 min-width: 200px;
@@ -130,7 +132,7 @@ display: none;
     content: "";
     border-width: 10px;
     border-style: solid;
-    border-color: transparent transparent #F6f6f6 transparent;
+    border-color: transparent transparent var(--section-background)transparent;
     position: absolute;
     right: 5px;
     top: -20px;
@@ -189,9 +191,9 @@ max-width: 100%;
 
 /* Start Feature Section */
 .feature-section{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #F6f6f6;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
     text-align: center;
 }
 /* Selecting all icons */
@@ -220,8 +222,8 @@ max-width: 100%;
 
 /* Start Services Section */
 .services{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 .services .services-content{
     display: grid;
@@ -279,3 +281,37 @@ width: 260px;
     }
 }
 /* End Services Section */
+/* ================================================= */
+/* Start Portfolio Section */
+.portfolio{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+}
+.portfolio .portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+}
+.portfolio-content .card{
+    background-color: white;
+    border-radius: 4px;
+}
+.portfolio-content img{
+    max-width: 100%;
+    aspect-ratio: 3/2;
+}
+.portfolio-content .info{
+    padding: 20px;
+}
+.portfolio-content .info h3{
+    margin: 0;
+}
+.portfolio-content .info p{
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* End Portfolio Section */

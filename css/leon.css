@@ -13,6 +13,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     font-family: "Work Sans", sans-serif;
@@ -211,6 +213,7 @@ max-width: 100%;
     line-height: 1.8;
     color: #777;
     font-size: 17px;
+    margin-top: 10px;
 }
 .feature-section .feature-item h3{
     font-weight: 800;
@@ -311,7 +314,6 @@ width: 260px;
 .portfolio-content .info p{
     color: #777;
     line-height: 1.6;
-    margin-bottom: 0;
 }
 
 /* End Portfolio Section */

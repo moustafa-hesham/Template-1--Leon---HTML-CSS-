@@ -4,7 +4,8 @@
     --main-color:#10cab7;
     --secondary-color: #2c4755;
     --section-padding:60px;
-    --section-background:#F6f6f6
+    --section-background:#F6f6f6;
+    --section-margin:100px;
 }
 /* End Variables */
 
@@ -232,7 +233,7 @@ max-width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     grid-gap: 30px;
-    margin-top: 100px;
+    margin-top: var(--section-margin);
 }
 .services .services-content .service-item{
     display: flex;
@@ -295,7 +296,7 @@ width: 260px;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     grid-gap: 30px;
-    margin-top: 100px;
+    margin-top: var(--section-margin);
 }
 .portfolio-content .card{
     background-color: white;
@@ -315,5 +316,50 @@ width: 260px;
     color: #777;
     line-height: 1.6;
 }
-
 /* End Portfolio Section */
+
+/* ================================================= */
+
+/* Start About Section */
+.about{
+    padding-top: var(--section-padding);
+    padding-bottom: calc(var(--section-padding) + 60px);
+}
+.about-content{
+    margin-top: var(--section-margin);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-content .image{
+    position: relative;
+    width: 250px;
+    height: 375px;
+}
+.about-content .image::before{
+    content: "";
+    position: absolute;
+    background: #ebeced;
+    width: 100px;
+    height: calc(100% + 80px);
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+}
+.about-content .image::after{ 
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 300px;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+    z-index: -1;
+    right: -150px;
+    top: -40px;
+    
+}
+.about-content img{
+    max-width: 100%;
+    height: 100%;
+}
+/* End About Section */

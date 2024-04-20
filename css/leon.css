@@ -397,5 +397,61 @@ width: 260px;
     color: #777;
     line-height: 2;
 }
-
 /* End About Section */
+/* ================================================= */
+/* Start Contact Section */
+.contact{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+}
+.contact .info{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+}
+.contact .info .label{
+    color: var(--secondary-color);
+    font-weight: 800;
+    font-size: 42px;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+    
+}
+.contact .info .link{
+    color: var(--main-color);
+    display: block ;
+    font-weight: bold;
+    font-size: 32px;
+    text-decoration: none;
+}
+.contact .info .social{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.contact .info .social i{
+    margin-left: 10px;
+    color: var(--secondary-color);
+}
+@media (max-width:767px) {
+    .contact .info .label, .contact .info .social i{
+        font-size: 25px;
+    }
+}
+/* End Contact Section */
+/* ================================================= */
+/* Start Footer Section */
+.footer{
+background-color: var(--secondary-color);
+color: white;
+padding: 30px 10px;
+text-align: center;
+font-size: 18px;
+}
+.footer span{
+    color: var(--main-color);
+    font-weight: bold;
+}
+/* End Footer Section */

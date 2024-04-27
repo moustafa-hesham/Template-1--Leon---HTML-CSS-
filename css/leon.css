@@ -168,7 +168,7 @@ display: none;
 /* Start Landing Section */
 .landing{
     position: relative;
-    background-image: url("imgs/background-intro.jpeg");
+    background-image: url("/imgs/background-intro.jpeg");
     background-size: cover;
     height: calc(100vh - 64px);
 }
